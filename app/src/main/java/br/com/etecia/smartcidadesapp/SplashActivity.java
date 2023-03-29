@@ -24,7 +24,6 @@ Button btnentrar;
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),
                 LoginActivity.class));
-                finish();
             }
         });
     }
