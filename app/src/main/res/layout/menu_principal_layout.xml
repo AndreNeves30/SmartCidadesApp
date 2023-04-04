@@ -1,9 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuPrincipalActivity">
+    android:background="#fff">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU PRINCIPAL"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_reserve"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/btn_reserve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_quartos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_toRightOf="@id/card_reserve">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <Button
+                    android:id="@+id/btn_quartos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quartos"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_piscina"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_reserve">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                     />
+
+                <Button
+                    android:id="@+id/btn_piscina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Piscina"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_fachada"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_quartos"
+                android:layout_toRightOf="@id/card_piscina">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                     />
+
+                <Button
+                    android:id="@+id/btn_fachada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Localização"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sobre"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_piscina">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop" />
+
+                <Button
+                    android:id="@+id/btn_sobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sobre"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_localizacao"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_fachada"
+                android:layout_toRightOf="@id/card_sobre">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <Button
+                    android:id="@+id/btn_contato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contato"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
