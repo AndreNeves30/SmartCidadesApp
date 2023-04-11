@@ -36,9 +36,11 @@
                 android:layout_margin="7dp">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"/>
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/planeta"
+                    android:scaleType="centerCrop" />
 
                 <Button
                     android:id="@+id/btn_reserve"
@@ -59,8 +61,10 @@
                 android:layout_toRightOf="@id/card_reserve">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/robo"
                     android:scaleType="centerCrop"
                     />
 
@@ -84,8 +88,10 @@
                 android:layout_below="@id/card_reserve">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ecology"
                     android:scaleType="centerCrop"
                      />
 
@@ -111,8 +117,10 @@
                 android:layout_toRightOf="@id/card_piscina">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/smarticity"
                     android:scaleType="centerCrop"
                      />
 
@@ -136,8 +144,10 @@
                 android:layout_below="@id/card_piscina">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/smartcity"
                     android:scaleType="centerCrop" />
 
                 <Button
@@ -160,9 +170,11 @@
                 android:layout_toRightOf="@id/card_sobre">
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/streetlight"
                     />
 
                 <Button
